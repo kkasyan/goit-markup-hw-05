@@ -73,7 +73,9 @@
       <section class="section">
         <div class="container hero-container">
           <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="section-btn">Заказать услугу</button>
+          <button type="button" class="section-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="qualities">
@@ -118,25 +120,34 @@
           <h2 class="section-header what-we-do-header">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="image-list">
-              <img
-                src="./images/box1.jpg"
-                alt="Человек набирает код на клавиатуре"
-                width="370"
-              />
+              <div class="wwd-thumb">
+                <img
+                  src="./images/box1.jpg"
+                  alt="Человек набирает код на клавиатуре"
+                  width="370"
+                />
+                <h3 class="wwd-thumb-header">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="image-list">
-              <img
-                src="./images/box2.jpg"
-                alt="Человек держит в руках планшет и выбирает на ноутбуке дизайн приложения"
-                width="370"
-              />
+              <div class="wwd-thumb">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Человек держит в руках планшет и выбирает на ноутбуке дизайн приложения"
+                  width="370"
+                />
+                <h3 class="wwd-thumb-header">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="image-list">
-              <img
-                src="./images/box3.jpg"
-                alt="Человек держит в руках планшет и рассматривает цветовую палитру"
-                width="370"
-              />
+              <div class="wwd-thumb">
+                <img
+                  src="./images/box3.jpg"
+                  alt="Человек держит в руках планшет и рассматривает цветовую палитру"
+                  width="370"
+                />
+                <h3 class="wwd-thumb-header">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -401,5 +412,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!-- <button data-modal-close>
+          <svg class="close-btn" width="30" height="30">
+            <use href="./images/close.svg"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
