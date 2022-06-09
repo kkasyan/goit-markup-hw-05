@@ -652,11 +652,11 @@ li {
 }
 
 .close-modal-btn {
-  top: 0;
-  right: 0;
   margin-top: 8px;
   margin-right: 8px;
   position: absolute;
+  top: 0;
+  right: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -664,6 +664,17 @@ li {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--second-text-color);
   cursor: pointer;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.close-btn {
+  position: absolute;
+  z-index: 2;
+  fill: #000000;
 }
 
 .is-hidden {
