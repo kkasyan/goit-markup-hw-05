@@ -647,8 +647,6 @@ li {
   transform: scale(1) translate(-50%, -50%);
   opacity: 1;
   transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-duration: 6000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .close-modal-btn {
@@ -683,14 +681,14 @@ li {
   pointer-events: none;
 }
 
-.backdrop .is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: scale(1.5) translate(-50%, -50%);
   transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
-.modal .is-hidden {
+
+.modal.is-hidden {
   transform: scale(0.5) translate(-50%, -50%);
-} */
+}
 
 /*---------------------------PORTFOLIO-------------------------------------------------*/
 .header-portf {
