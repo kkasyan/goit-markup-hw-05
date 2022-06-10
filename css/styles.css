@@ -644,7 +644,7 @@ li {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%) rotate(1turn);
   opacity: 1;
   transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -684,10 +684,6 @@ li {
 .backdrop.is-hidden .modal {
   transform: scale(1.5) translate(-50%, -50%);
   transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal.is-hidden {
-  transform: scale(0.5) translate(-50%, -50%);
 }
 
 /*---------------------------PORTFOLIO-------------------------------------------------*/
